@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Trip Verse Tourism App Design System
+All colors MUST be HSL and inspired by India's natural beauty
+*/
+
+@layer base {
+  :root {
+    /* Base colors inspired by India's natural palette */
+    --background: 48 20% 98%;
+    --foreground: 158 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 158 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 158 25% 15%;
+
+    /* Primary: Deep emerald inspired by backwaters */
+    --primary: 158 64% 22%;
+    --primary-foreground: 48 20% 98%;
+    --primary-glow: 158 45% 35%;
+
+    /* Secondary: Warm earth tones inspired by spices */
+    --secondary: 35 35% 92%;
+    --secondary-foreground: 158 25% 15%;
+
+    /* Muted: Soft coconut palm greens */
+    --muted: 142 20% 94%;
+    --muted-foreground: 158 15% 45%;
+
+    /* Accent: Golden sunset inspired by temple gold */
+    --accent: 45 85% 65%;
+    --accent-foreground: 158 25% 15%;
+
+    /* Destructive: Warm red inspired by chili */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 48 20% 98%;
+
+    --border: 142 15% 88%;
+    --input: 142 15% 88%;
+    --ring: 158 64% 22%;
+
+    --radius: 0.75rem;
+    
+    /* India-specific design tokens */
+    --nature-backwater: 158 64% 22%;
+    --nature-sunset: 45 85% 65%;
+    --nature-palm: 142 45% 35%;
+    --nature-spice: 35 75% 45%;
+    --nature-temple-gold: 45 95% 75%;
+    
+    /* Gradients */
+    --gradient-backwater: linear-gradient(135deg, hsl(158 64% 22%), hsl(158 45% 35%));
+    --gradient-sunset: linear-gradient(135deg, hsl(45 85% 65%), hsl(35 75% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(158 64% 22%) 0%, hsl(142 45% 35%) 50%, hsl(45 85% 65%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(142 20% 99%));
+    
+    /* Shadows with natural colors */
+    --shadow-emerald: 0 10px 30px -10px hsl(158 64% 22% / 0.3);
+    --shadow-sunset: 0 8px 25px -8px hsl(45 85% 65% / 0.4);
+    --shadow-soft: 0 4px 20px -4px hsl(158 25% 15% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with evening vibes */
+    --background: 158 25% 8%;
+    --foreground: 48 20% 95%;
+
+    --card: 158 20% 12%;
+    --card-foreground: 48 20% 95%;
+
+    --popover: 158 20% 12%;
+    --popover-foreground: 48 20% 95%;
+
+    --primary: 158 45% 65%;
+    --primary-foreground: 158 25% 8%;
+    --primary-glow: 158 55% 75%;
+
+    --secondary: 158 15% 18%;
+    --secondary-foreground: 48 20% 95%;
+
+    --muted: 158 15% 18%;
+    --muted-foreground: 158 10% 65%;
+
+    --accent: 45 75% 55%;
+    --accent-foreground: 158 25% 8%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 48 20% 95%;
+
+    --border: 158 15% 22%;
+    --input: 158 15% 22%;
+    --ring: 158 45% 65%;
+    
+    /* Dark mode gradients */
+    --gradient-backwater: linear-gradient(135deg, hsl(158 45% 65%), hsl(158 35% 45%));
+    --gradient-sunset: linear-gradient(135deg, hsl(45 75% 55%), hsl(35 65% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(158 45% 65%) 0%, hsl(142 35% 25%) 50%, hsl(45 75% 55%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(158 20% 12%), hsl(158 18% 15%));
+    
+    /* Dark shadows */
+    --shadow-emerald: 0 10px 30px -10px hsl(158 45% 65% / 0.4);
+    --shadow-sunset: 0 8px 25px -8px hsl(45 75% 55% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
