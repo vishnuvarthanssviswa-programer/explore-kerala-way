@@ -44,7 +44,6 @@ const menuItems = [
   { id: "nearby-services", title: "Nearby Services", icon: MapPin, group: "main" },
   { id: "journal", title: "My Journal", icon: BookOpen, group: "main" },
   
-  { id: "offline-access", title: "Offline Access", icon: Wifi, group: "tools" },
   { id: "my-documents", title: "My Documents", icon: FileText, group: "tools" },
   { id: "travel-insurance", title: "Travel Insurance", icon: Shield, group: "tools" },
   
