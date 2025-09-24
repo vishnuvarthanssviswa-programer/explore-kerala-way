@@ -55,7 +55,6 @@ const Index = () => {
         return <BookTicketsScreen onNavigate={handleNavigate} />;
       case "nearby-services":
         return <MapScreen onNavigate={handleNavigate} />;
-      case "offline-access":
       case "my-documents":
       case "travel-insurance":
       case "help":
