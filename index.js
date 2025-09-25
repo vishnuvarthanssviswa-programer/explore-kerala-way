@@ -9,10 +9,11 @@ app.use(express.json());
 
 // Use your Clever Cloud MySQL credentials here
 const db = mysql.createConnection({
-  host: "your-mysql-host",        // Provided by Clever Cloud
-  user: "your-mysql-username",    // Provided by Clever Cloud
-  password: "your-mysql-password",// Provided by Clever Cloud
-  database: "your-db-name"        // Provided by Clever Cloud
+  host: "btf0miqesu19lhazkygl-mysql.services.clever-cloud.com",        // Provided by Clever Cloud
+  user: "uy0x106fghn0uogs",    // Provided by Clever Cloud
+  password: "TOSnHhTFiEbXjeczcqKI",// Provided by Clever Cloud
+  database: "btf0miqesu19lhazkygl", // Provided by Clever Cloud
+  port: "3306"
 });
 
 db.connect(err => {
