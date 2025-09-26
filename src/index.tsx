@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import 'leaflet/dist/leaflet.css';  // important
+import MapView from './components/MapView';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <div>
+      {/* Other content */}
+      <MapView />
+    </div>
+  );
+}
+
+export default App;
